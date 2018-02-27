@@ -1,3 +1,6 @@
+"""
+doesnt work i dont know why
+"""
 letters=input('Write something and magic will happen ')
 stuff=letters.split()
 owelvay = ['A','E','I','O','U','a','e','i','o','u']
