@@ -42,18 +42,6 @@ For each item on this list, you will receive one mark if it is completed correct
 - [ ] `debugMe`: All required packages imported 
 - [ ] `debugMe`: Code runs free of errors
     
-- [ ] `completeMe`: Correct lines for getting length and width from user
-- [ ] `completeMe`: Area is correctly calculated
-- [ ] `completeMe`: Perimeter is correctly calculated
-- [ ] `completeMe`: Perimeter is correctly displayed
-- [ ] `completeMe`: Code runs free of errors
-    
-- [ ] `commentMe`: complete docstring has been added
-- [ ] `commentMe`: first section (print statement) has an appropriate comment
-- [ ] `commentMe`: second section (r =) have appropriate comments
-- [ ] `commentMe`: third section (area) has appropriate comments
-- [ ] `commentMe`: fourth section (perimeter) has appropriate comments
-    
 - [ ] All: Changes have been committed
 - [ ] All: Changes have been pushed to GitHub
 
