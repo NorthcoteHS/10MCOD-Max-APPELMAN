@@ -1,7 +1,7 @@
 """
 Prog:   rectCalc.py
 Name:   Max Appelman
-Date:   12/03/18
+Date:   2018/03/12
 Desc:   Calculates the area and perimeter of a rectangle.
 """
 

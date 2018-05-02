@@ -1,7 +1,7 @@
 """
 Prog:   yesNoProgram.py
 Name:   Max Appelman
-Date:   12/03/18
+Date:   2018/03/12
 Desc:   Answers yes or no to any question.
 """
 
