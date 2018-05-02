@@ -1,6 +1,6 @@
 """
 Prog:   yesNoProgram.py
-Name:   Student Name
+Name:   Max Appelman
 Date:   12/03/18
 Desc:   Answers yes or no to any question.
 """
