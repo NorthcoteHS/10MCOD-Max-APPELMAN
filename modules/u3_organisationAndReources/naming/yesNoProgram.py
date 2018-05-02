@@ -11,16 +11,15 @@ import random
 question = input('Ask me anything! ')
 
 # Check for special input.
-if  question == 'Quit':
-    print('Goodbye.)
+if  question == 'Quit' or question =='quit':
+    print('Goodbye.')
 elif question == 'Hi' or question=='Hello':
     print("What's up?")
-
 # Answer yes or no randomly.
 else:
-    num = random.randint(0,4);
-if num == "1":
-    print("Yes!")
-if num = 2:
-    "No"
-done
+    num = random.randint(1,2)
+    if num == "1":
+        print("Yes!")
+    elif num == "2":
+        print("No")
+
