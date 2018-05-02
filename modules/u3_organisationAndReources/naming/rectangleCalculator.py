@@ -8,8 +8,7 @@ Desc:   Calculates the area and perimeter of a rectangle.
 # Display welcome message.
 print('Welcome to the Rectangle Calculator!')
 
-# Use input to get the rectangle's length and width (2 lines).
-# - Remember to provide a prompt message for each input.
+# Use input to get the rectangle's length and width
 length=input("Enter the length: ")
 width=input("Enter the width: ")
 
@@ -17,12 +16,12 @@ width=input("Enter the width: ")
 length = int(length)
 width = int(width)
 
-# Calculate the area (1 line: length times width).
+# Calculate the area
 area = length*width
 
 # Display the area.
 print('The area is', area)
 
-# Calculate and display the perimeter (2 lines: P = 2*length + 2*width).
+# Calculate and display the perimeter
 perimeter = 2*length + 2*width
 print('the perimeter is', perimeter)

@@ -7,7 +7,7 @@ desc: Calculates area and perimter of a circle.
 #displays welcome message
 print('Welcome to the Circle Calculator!')
 
-#defines a variable and converts to integer
+#asks user for the radius and converts to integer
 r = input('Enter a radius: ')
 r = int(r)
 
