@@ -2,7 +2,7 @@
 prog: circleCalculator.py
 name: Max Appelman
 date: 2018/03/12
-desc: calculates area and perimter of a circle.
+desc: Calculates area and perimter of a circle.
 """
 #displays welcome message
 print('Welcome to the Circle Calculator!')

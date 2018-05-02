@@ -2,7 +2,7 @@
 Prog:   userInfo.py
 Name:   Max Appelman
 Date:   2018/03/12
-Desc:   Asks the user for their name, address, etc.
+Desc:   Asks the user for personal information.
 """
 
 # Display welcome message.
