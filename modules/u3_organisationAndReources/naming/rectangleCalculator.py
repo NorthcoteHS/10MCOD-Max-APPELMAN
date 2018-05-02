@@ -1,5 +1,5 @@
 """
-Prog:   rectCalc.py
+Prog:   rectangleCalculator.py
 Name:   Max Appelman
 Date:   2018/03/12
 Desc:   Calculates the area and perimeter of a rectangle.
@@ -25,4 +25,4 @@ print('The area is', area)
 
 # Calculate and display the perimeter (2 lines: P = 2*length + 2*width).
 perimeter = 2*length + 2*width
-print('the perimter is', perimeter)
+print('the perimeter is', perimeter)
