@@ -33,14 +33,6 @@ firstName = 'Bob'
 
 For each item on this list, you will receive one mark if it is completed correctly.
 
-
-- [ ] All: docstrings: Fields are updated based on changes made
-
-- [ ] `debugMe`: All typos corrected
-- [ ] `debugMe`: Logic error corrected
-- [ ] `debugMe`: All syntax errors corrected
-- [ ] `debugMe`: All required packages imported 
-- [ ] `debugMe`: Code runs free of errors
     
 - [ ] All: Changes have been committed
 - [ ] All: Changes have been pushed to GitHub

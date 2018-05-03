@@ -12,9 +12,9 @@ r = input('Enter a radius: ')
 r = int(r)
 
 #calculates and prints area of a circle
-area = 3.14 * r * r
+area = 3.1415 * r * r
 print('The area is', area)
 
 #calculates and prints perimeter of a circle
-perimeter = 3.14 * r * 2
+perimeter = 3.1415 * r * 2
 print('The perimeter is', perimeter)

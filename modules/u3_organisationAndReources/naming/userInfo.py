@@ -18,9 +18,9 @@ birthMonth = input('Birth Month: ')
 birthDay = input('Birth Day: ')
 
 # Get user's favourites.
-favColour = input('Favourite colour: ')
-favSong = input('Favourite song: ')
-favSport = input('Favourite sport: ')
+userColour = input('Favourite colour: ')
+userSong = input('Favourite song: ')
+userSport = input('Favourite sport: ')
 
 # Display exit message.
 print('Thank you, your information has been saved.')

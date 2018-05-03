@@ -18,8 +18,8 @@ elif question == 'Hi' or question=='Hello':
 # Answer yes or no randomly.
 else:
     num = random.randint(1,2)
-    if num == "1":
+    if num == 1:
         print("Yes!")
-    elif num == "2":
+    elif num == 2:
         print("No")
 
