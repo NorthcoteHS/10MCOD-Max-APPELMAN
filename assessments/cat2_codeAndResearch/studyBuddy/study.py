@@ -10,8 +10,19 @@ questions=['Which of these is not a breed of dog? A) Pugador B) Prince Charles S
 
 correctAnswers=['B','D','D','C','A','D','A']
 
+score=0
+
 def q:
-    for n in questions:
-    answer=input(n)
-    if answer==
+
+    for i,n in enumerate(questions):
+        print(n)
+        answer=input(n)
+        if answer == correctAnswers[i]:
+            print('Correct!')
+            score +=1
+        else:
+            print('Wrong! You suck!')
+
+
+
 
