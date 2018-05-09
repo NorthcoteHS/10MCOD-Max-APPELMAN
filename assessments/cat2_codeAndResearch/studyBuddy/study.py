@@ -6,13 +6,12 @@ desc: asks user a series of questions, gives correct/incorrect feedback, and tal
 """
 
 
-questions=['Which of these is not a breed of dog? A) Pugador B) Prince Charles Spaniel C) Beaglier D) Griffon Bruxellois', 'What is the melting point of water? A) 100 celsius B) 100 Fahrenheit C) 212 Fahrenheit D) 32 Fahrenheit', 'Best way to disarm a knife in close range(<2m)? A) Run away B) get stabbed then play dead C) get stabbed then be dead D) grab the knife, punch assailant and run away', 'Which of these is a berry? A) celery B) strawberry C) banana D) celeriac', 'How do you make bronze? A) tin and copper B) gold minus silver C) gold plus silver D) iron and gold', 'If price increases... A) demand expands and supply expands B) deamnd contracts and supply contracts C) demand expands and supply contracts D) demand contracts and supply expands', 'What is 12x12? A) 144 B) 48 C) 24 D) 121']
+questions=['Which of these is not a breed of dog? A) Pugador B) Prince Charles Spaniel C) Beaglier D) Griffon Bruxellois: ', 'What is the melting point of ice (not the drug)? A) 100 celsius B) 100 Fahrenheit C) 212 Fahrenheit D) 32 Fahrenheit: ', 'Best way to disarm a knife in close range(<2m)? A) Run away B) get stabbed then play dead C) get stabbed then be dead D) grab the knife, punch assailant and run away: ', 'Which of these is a berry? A) celery B) strawberry C) banana D) celeriac: ', 'How do you make bronze? A) tin and copper B) gold minus silver C) gold plus silver D) iron and gold: ', 'If price increases... A) demand expands and supply expands B) demand contracts and supply contracts C) demand expands and supply contracts D) demand contracts and supply expands: ', 'What is 12x12? A) 144 B) 48 C) 24 D) 121: ']
 
 correctAnswers=['B','D','D','C','A','D','A']
 
-score=0
-
 def q():
+    score = 0
     for i,n in enumerate(questions):
         answer=input(n)
         if answer == correctAnswers[i]:
@@ -20,7 +19,8 @@ def q():
             score +=1
         else:
             print('Wrong! You suck!')
+    print("You scored",score+"out of 7!")
 q()
-print(score)
+
 
 
