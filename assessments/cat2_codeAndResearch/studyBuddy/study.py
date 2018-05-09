@@ -19,7 +19,7 @@ def q():
             score +=1
         else:
             print('Wrong! You suck!')
-    print("You scored",score+"out of 7!")
+    print("You scored"+ str(score)+"out of 7!")
 q()
 
 
