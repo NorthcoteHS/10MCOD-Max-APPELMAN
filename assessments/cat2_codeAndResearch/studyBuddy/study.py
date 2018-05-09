@@ -12,17 +12,15 @@ correctAnswers=['B','D','D','C','A','D','A']
 
 score=0
 
-def q:
-
+def q():
     for i,n in enumerate(questions):
-        print(n)
         answer=input(n)
         if answer == correctAnswers[i]:
             print('Correct!')
             score +=1
         else:
             print('Wrong! You suck!')
-
-
+q()
+print(score)
 
 
