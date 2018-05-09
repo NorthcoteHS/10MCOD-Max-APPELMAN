@@ -13,30 +13,32 @@ questions=['Which of these is not a breed of dog? A) Pugador B) Prince Charles S
 
 #list of correct answers
 correctAnswers=['B','D','D','C','A','D','A']
-
+#sets starting score
+score = 0
 #defines the function 'q'
-def q():
-    #sets starting score
-    score = 0
-    #goes through the questions in the list and sets a counter for each question
-    for i,n in enumerate(questions):
-        #gets rid of whitespace and case issues
-        answer=input(n).upper()
-        answer = answer.strip()
-        #gives feedback to user and adjusts user score
-        if answer == correctAnswers[i]:
-            print('Correct!')
-            score +=1
-        else:
-            print('Wrong! You suck!')
-    #gives user their total score and comments on the score
-    print("You scored "+ str(score)+" out of 7!")
-    if score ==7:
-        print('(PERFECT OMG)')
-    elif score==4 or score==5 or score==6:
-        print('(hmm...reasonable)')
+def q(i,n):
+    #gets rid of whitespace and case issues
+    answer=input(n).upper()
+    answer = answer.strip()
+    #gives feedback to user and adjusts user score
+    if answer == correctAnswers[i]:
+        print('Correct!')
+        score +=1
     else:
-        print('(Wow you really suck nah its all g)')
+        print('Wrong! You suck!')
+
+
+#goes through the questions in the list and sets a counter for each question
+for i,n in enumerate(questions):
+    q(i,n)
+#gives user their total score and comments on the score
+print("You scored "+ str(score)+" out of 7!")
+if score ==7:
+    print('(PERFECT OMG)')
+elif score==4 or score==5 or score==6:
+    print('(hmm...reasonable)')
+else:
+    print('(Wow you really suck nah its all g)')
 #calls the function
 q()
 
