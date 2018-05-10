@@ -45,8 +45,9 @@ elif score==4 or score==5 or score==6:
 else:
     print('(Wow you really suck nah its all g)')
 
-
+#asks user for very basic feedback on the quiz
 x=input('Please rate how much you like this quiz out of 5! ')
+#repsonds to the user feedback
 if x==5:
     print("YEE THANKS!")
 elif x==3 or x==4:
