@@ -36,6 +36,7 @@ for i,n in enumerate(questions):
     #calls the function
     q(i,n)
 #gives user their total score and comments on the score
+print(' ')
 print("You scored "+ str(score)+" out of 7!")
 if score ==7:
     print('(PERFECT OMG)')
