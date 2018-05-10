@@ -46,13 +46,13 @@ else:
     print('(Wow you really suck nah its all g)')
 
 
-x=input('Please rate how much you like this quiz out of 5!')
+x=input('Please rate how much you like this quiz out of 5! ')
 if x==5:
     print("YEE THANKS!")
 elif x==3 or x==4:
     print("Well that's a bit rude")
 else:
-    print('YOUR SO MEANNN')
+    print("YOU'RE SO MEANNN")
 
 
 
