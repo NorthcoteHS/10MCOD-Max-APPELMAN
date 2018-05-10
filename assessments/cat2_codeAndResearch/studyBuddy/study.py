@@ -19,6 +19,7 @@ score = 0
 
 #defines the function 'q'
 def q(i,n):
+    global score
     #gets rid of whitespace and case issues
     answer=input(n).upper()
     answer = answer.strip()
