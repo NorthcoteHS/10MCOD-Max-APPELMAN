@@ -20,3 +20,7 @@ stuff=int(input("How much do you spend on entertainment and restaurants per mont
 other=int(input("How much do you spend on other items per month- e.g. clothes, pets)
 DEBT=int(input("How much do you spend on debt payments per month, including interest payments?")
 pmIncome=paIncome/12
+
+#get info about user savings
+save=int(input("How much non-super money do you save per month?")
+saveROI=int(input("What is the interest rate on your savings per year, e.g. bank account at 2%pa?")
