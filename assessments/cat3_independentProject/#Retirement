@@ -5,7 +5,7 @@ print(" ")
 
 #get info about user superannuation
 print("Part One- Superannuation")
-paIncome=int(input(What is your annual income?"))
+paIncome=int(input("What is your annual income?"))
 age=int(input("What is your current age?"))
 super=int(input("What is your current superannuation balance?"))
 
