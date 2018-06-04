@@ -1,3 +1,10 @@
+#Welcome and disclaimer
 print("Hello and welcome to the amazing #Retirement financial advisor")
 print("Note: this program is not an certified financial advisor")
 print(" ")
+
+#get info about user superannuation
+print("Part One- Superannuation")
+paIncome=input("What is your annual income?")
+age=input("What is your current age?")
+super=input("What is your current superannuation balance?")
