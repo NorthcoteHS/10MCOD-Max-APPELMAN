@@ -24,3 +24,6 @@ pmIncome=paIncome/12
 #get info about user savings
 save=int(input("How much non-super money do you save per month?")
 saveROI=int(input("What is the interest rate on your savings per year, e.g. bank account at 2%pa?")
+
+#get info about user investments
+yesNo=int(input("Are you currently making investments other than superannuation?")
