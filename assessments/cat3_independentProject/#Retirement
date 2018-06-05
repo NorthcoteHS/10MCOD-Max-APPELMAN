@@ -11,22 +11,22 @@ age=int(input("What is your current age? "))
 
 #1400pm is australian average
 #get info about user spending
-housing=int(input("How much do you spend on mortgage/rent per month?")
-#bills=int(input("How much do you spend on utilities per month?")
-insurance=int(input("How much do you spend on insurance per month, including auto insurance?")
-transport=int(input("How much do you spend on transport per month, excluding auto insurance?")
-food=int(input("How much do you spend on groceries per month, not including restaurants?")
-stuff=int(input("How much do you spend on entertainment and restaurants per month?")
-other=int(input("How much do you spend on other items per month- e.g. clothes, pets)
-DEBT=int(input("How much do you spend on debt payments per month, including interest payments?")
+housing=int(input("How much do you spend on mortgage/rent per month?"))
+#bills=int(input("How much do you spend on utilities per month?"))
+insurance=int(input("How much do you spend on insurance per month, including auto insurance?"))
+transport=int(input("How much do you spend on transport per month, excluding auto insurance?"))
+food=int(input("How much do you spend on groceries per month, not including restaurants?"))
+stuff=int(input("How much do you spend on entertainment and restaurants per month?"))
+other=int(input("How much do you spend on other items per month- e.g. clothes, pets"))
+DEBT=int(input("How much do you spend on debt payments per month, including interest payments?"))
 pmIncome=paIncome/12
 
 #get info about user savings
-save=int(input("How much non-super money do you save per month?")
-saveROI=int(input("What is the interest rate on your savings per year, e.g. bank account at 2%pa?")
+save=int(input("How much non-super money do you save per month?"))
+saveROI=int(input("What is the interest rate on your savings per year, e.g. bank account at 2%pa?"))
 
 #get info about user investments
 yesNo=input("Are you currently making investments other than superannuation?")
 if yesNo=='yes':
-risk=input("Which of these best matches your investment? A. low risk e.g. guaranteed term deposit or bank account B. medium risk e.g. managed fund, ETFS, shares, property C. high risk e.g. futures, options, venture capital")
-fee=int(input("What are your annual investment fees as a percentage?")
+    risk=input("Which of these best matches your investment? A. low risk e.g. guaranteed term deposit or bank account B. medium risk e.g. managed fund, ETFS, shares, property C. high risk e.g. futures, options, venture capital")
+    fee=int(input("What are your annual investment fees as a percentage?")
