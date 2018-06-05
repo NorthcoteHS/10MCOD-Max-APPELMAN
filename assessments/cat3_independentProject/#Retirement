@@ -9,7 +9,7 @@ print("Part One- Superannuation")
 print("Please answer all questions in numerical form only")
 paIncome=int(input("What is your annual income? "))
 age=int(input("What is your current age? "))
-#super=int(input("What is your current superannuation balance? "))
+super=int(input("What is your current superannuation balance? "))
 
 #1400pm is australian average
 #get info about user spending
