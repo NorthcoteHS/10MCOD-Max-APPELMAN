@@ -9,14 +9,22 @@ print("Part One- Superannuation")
 print("Please answer all questions in numerical form only")
 paIncome=int(input("What is your annual income? "))
 age=int(input("What is your current age? "))
-super=int(input("What is your current superannuation balance? "))
+superr=int(input("What is your current superannuation balance? "))
 
+#tell user how much more superaanuation they need
+difference=250000-superr
+print("You need", difference, "more dollars in superannuation to retire, assuming you have a paid-off house")
+years=65-age
+yearly=difference/years
+superPercent=yearly/paIncome*100
+print("You need to put", str(yearly), "dollars into your superannuation account each year to retire,", str(superPercent)+"% of your annual income")
+      
 #1400pm is australian average
 #get info about user spending
 print("Part Two- Spending")
 print("Please answer all questions in numerical form only")
 housing=int(input("How much do you spend on mortgage/rent per month? "))
-#bills=int(input("How much do you spend on utilities per month?" ))
+bills=int(input("How much do you spend on utilities per month?" ))
 insurance=int(input("How much do you spend on insurance per month, including auto insurance?" ))
 transport=int(input("How much do you spend on transport per month, excluding auto insurance?" ))
 food=int(input("How much do you spend on groceries per month, not including restaurants?" ))
@@ -35,5 +43,5 @@ saveROI=int(input("What is the interest rate on your savings per year?, e.g. ans
 print("Part Four- Investing")
 yesNo=input("Are you currently making investments other than superannuation?")
 if yesNo=='yes':
-    risk=input("Which of these best matches your investment? A. low risk e.g. guaranteed term deposit or bank account B. medium risk e.g. managed fund, ETFS, shares, property C. high risk e.g. futures, options, venture capital")
+    risk=input("Which of these best matches your investment? \nA. low risk e.g. guaranteed term deposit or bank account \nB. medium risk e.g. managed fund, ETFS, shares, property \nC. high risk e.g. futures, options, venture capital")
     fee=int(input("What are your annual investment fees as a percentage?"))
