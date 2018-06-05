@@ -13,11 +13,14 @@ superr=int(input("What is your current superannuation balance? "))
 
 #tell user how much more superaanuation they need
 difference=250000-superr
-print("You need", difference, "more dollars in superannuation to retire, assuming you have a paid-off house")
-years=65-age
-yearly=difference/years
-superPercent=yearly/paIncome*100
-print("You need to put", str(yearly), "dollars into your superannuation account each year to retire,", str(superPercent)+"% of your annual income")
+if difference>0:
+    print("You need", difference, "more dollars in superannuation to retire, assuming you have a paid-off house")
+    years=65-age
+    yearly=difference/years
+    superPercent=yearly/paIncome*100
+    print("You need to put", str(yearly), "dollars into your superannuation account each year to retire,", str(superPercent)+"% of your annual income")
+else:
+    print("Congratulations! You have enough superannuation to retire!")
       
 #1400pm is australian average
 #get info about user spending
