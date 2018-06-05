@@ -29,4 +29,4 @@ saveROI=int(input("What is the interest rate on your savings per year, e.g. bank
 yesNo=input("Are you currently making investments other than superannuation?")
 if yesNo=='yes':
     risk=input("Which of these best matches your investment? A. low risk e.g. guaranteed term deposit or bank account B. medium risk e.g. managed fund, ETFS, shares, property C. high risk e.g. futures, options, venture capital")
-    fee=int(input("What are your annual investment fees as a percentage?")
+    fee=int(input("What are your annual investment fees as a percentage?"))
