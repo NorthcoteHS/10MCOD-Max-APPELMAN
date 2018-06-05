@@ -22,7 +22,7 @@ if difference>0:
 else:
     print("Congratulations! You have enough superannuation to retire!")
       
-#1400pm is australian average
+#1400pw is australian average
 #get info about user spending
 print("Part Two- Spending")
 print("Please answer all questions in numerical form only")
