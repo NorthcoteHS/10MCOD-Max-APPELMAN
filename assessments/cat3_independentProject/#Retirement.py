@@ -84,10 +84,10 @@ if more>0:
     print("This will take you", str(moreTime), "months at your current savings rate")
 losingToInflation=1.9-saveROI
 winningInflation=saveROI-1.9
-if saveROI<1.89:
-    print("Your savings ROI is", str(losingToInflation)+"% less than inflation, therefore, you are losing money. You should save your money somewhere with a higher ROI")
-elif saveROI==1.9:
+if saveROI==1.9:
     print("Your savings ROI is equal to inflation. You should save your money somewhere with a higher ROI")
+elif saveROI<1.89:
+    print("Your savings ROI is", str(losingToInflation)+"% less than inflation, therefore, you are losing money. You should save your money somewhere with a higher ROI")
 elif saveROI>1.91:
     print("Your savings ROI is", str(winningInflation)+"% more than inflation, therefore you are making money!")
 
