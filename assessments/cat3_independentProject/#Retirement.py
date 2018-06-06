@@ -58,9 +58,9 @@ elif bills<260:
 else:
     print("Your cost of utilities is average")
 #compare food cost to Australian average
-if food>160:
+if food>640:
     print("Your cost of food is above average")
-elif food<110:
+elif food<=440:
     print("Your cost of food is below average")
 else:
     print("Your cost of food is average")
@@ -70,7 +70,7 @@ else:
 #get info about user savings
 print("Part Three- Saving")
 print("Please answer all questions in numerical form only")
-savings=int(input("What is your current non-super savings balance?")
+savings=int(input("What is your current non-super savings balance? "))
 save=int(input("How much non-super money do you save per month? "))
 saveROI=int(input("What is the interest rate on your savings per year?, e.g. answer '2' for 2%pa "))
 #calculate how much the user needs for adequate financial security
@@ -80,33 +80,55 @@ moreTime=more/save
 print("Based on your current spending habits, you need", str(three), "in liquid savings to be financially secure in case of an emergency or opportunity")
 print("Therefore, you need", str(more), "more dollars in savings.")
 print("This will take you", str(moreTime), "months at your current savings rate")
+losingToInflation=1.9-saveROI
+winningInflation=saveROI-1.9
+if saveROI<1.9:
+    print("Your savings ROI is", str(losingToInflation)+"% less than inflation, therefore, you are losing money. You should save your money somewhere with a higher ROI")
+elif saveROI==1.9:
+    print("Your savings ROI is equal to inflation. You should save your money somewhere with a higher ROI")
+elif saveROI>1.91:
+    print("Your savings ROI is", str(winningInflation)+"% more than inflation, therefore you are making money!")
+
+
+
 #get info about user investments
 print("Part Four- Investing")
-yesNo=input("Are you currently making investments other than superannuation? ")
+yesNo=input("Are you currently making investments other than superannuation? (yes or no) ").lower()
+yesNo=yesNo.strip()
 if yesNo=='yes':
     risk=input("Which of these best matches your investment? \nA. low risk e.g. guaranteed term deposit or bank account \nB. medium risk e.g. managed fund, ETFS, shares, property \nC. high risk e.g. futures, options, venture capital\n")
     fee=int(input("What are your annual investment fees as a percentage?, e.g. answer '1' for 1%pa"))
-    returns1=int(input("What was your return on investment in 2013?")
-    returns2=int(input("What was your return on investment in 2014?")
-    returns3=int(input("What was your return on investment in 2015?")
-    returns4=int(input("What was your return on investment in 2016?")
-    returns5=int(input("What was your return on investment in 2017?")
-    avROI=returns1+returns2+returns3+returns4+returns5/5
-    print("Your average ROI is", avROI, "%pa')
+    returns1=int(input("What was your return on investment in 2013?"))
+    returns2=int(input("What was your return on investment in 2014?"))
+    returns3=int(input("What was your return on investment in 2015?"))
+    returns4=int(input("What was your return on investment in 2016?"))
+    returns5=int(input("What was your return on investment in 2017?"))
+    avROI=(returns1+returns2+returns3+returns4+returns5)/5
+    print("Your average ROI is", avROI, "%pa")
 #average rate of inflation for last 5 years is 1.896%pa
     if avROI<1.9:
           print("You are currently making negative profits on your investment due to inflation.")
-    elif avROI>1.9 and avROI<4:
+    elif avROI>1.9 and avROI<=4:
           print("You are currently making a small profit on your investment.")
     elif avROI>4 and avROI<7:
           print("You are currently making a reasonably good profit on your investment.")
     else:
           print("You are making awesome profits! congratulations!")
-    if risk=='A'
+    if risk=='A':
           print("You should aim for investments with higher risks and returns")
     elif risk=='C' and years<7:
           print("Assuming you will retire in", years, "years, you might want to aim for investments with lower risks")
     elif risk=='C' and years>7 and avROI>5:
-          print("Your investments seem great, just remember to switch to lower risk closer to retirement!")
+          print("Your investment seems great, just remember to switch to lower risk closer to retirement!")
     elif risk=='C' and years>7 and avROI<5:
           print("You might want to go for an invesment that is less risky and creates higher returns")
+    elif risk=='B' and avROI>5:
+          print("Your investment has a great risk-to-return ratio! Continue what you're doing!")
+    else:
+          print("Your investment is a good level of risk, but you should switch to something with higher returns.")
+elif years<7:
+    print("Assuming you retire in", years, "years, you should make diversified, medium-to-low risk investments (expected to return negative profits 1 to 2 years out of 20) ")
+elif years>7 and years<20:
+    print("Assuming you retire in", years, "years, you should make diversified, medium-to-high risk ivestments (expected to return negative profits 2 to 3 years out of 20) ")
+else:
+    print("Assuming you retire in", years, "years, you should make diversified, high risk investments (expected to return negative profits 4 to 5 years out of 20) ")
