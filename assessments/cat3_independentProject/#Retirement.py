@@ -35,7 +35,7 @@ total=housing+bills+food+other+DEBT
 pmIncome=paIncome/12
 yearSpend=total*12
 #get user spending as a percentage of user income
-spending=(paIncome/total)*100
+spending=total/paIncome*100
 print("Your spending is", str(spending), "% of your income")
 #compare monthly spending to Australian average
 if spending>5700:
