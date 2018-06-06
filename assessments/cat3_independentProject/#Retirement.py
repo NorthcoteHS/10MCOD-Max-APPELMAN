@@ -103,4 +103,10 @@ if yesNo=='yes':
     else:
           print("You are making awesome profits! congratulations!")
     if risk=='A'
-
+          print("You should aim for investments with higher risks and returns")
+    elif risk=='C' and years<7:
+          print("Assuming you will retire in", years, "years, you might want to aim for investments with lower risks")
+    elif risk=='C' and years>7 and avROI>5:
+          print("Your investments seem great, just remember to switch to lower risk closer to retirement!")
+    elif risk=='C' and years>7 and avROI<5:
+          print("You might want to go for an invesment that is less risky and creates higher returns")
