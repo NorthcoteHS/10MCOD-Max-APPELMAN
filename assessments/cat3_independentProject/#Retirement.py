@@ -33,8 +33,9 @@ other=int(input("How much do you spend on other items per month?- e.g. clothes, 
 DEBT=int(input("How much do you spend on debt payments per month, including interest payments and excluding mortgage payments? "))
 total=housing+bills+food+other+DEBT
 pmIncome=paIncome/12
+yearSpend=total*12
 #get user spending as a percentage of user income
-spending=(pmIncome/total)*100
+spending=(paIncome/total)*100
 print("Your spending is", str(spending), "% of your income")
 #compare monthly spending to Australian average
 if spending>5700:
