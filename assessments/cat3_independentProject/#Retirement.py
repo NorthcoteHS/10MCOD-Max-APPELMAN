@@ -34,7 +34,7 @@ DEBT=int(input("How much do you spend on debt payments per month, including inte
 total=housing+bills+food+other+DEBT
 pmIncome=paIncome/12
 #get user spending as a percentage of user income
-spending=pmIncome/total*100
+spending=(pmIncome/total)*100
 print("Your spending is", str(spending), "% of your income")
 #compare monthly spending to Australian average
 if spending>5700:
@@ -60,7 +60,7 @@ else:
 #compare food cost to Australian average
 if food>640:
     print("Your cost of food is above average")
-elif food<=440:
+elif food<440:
     print("Your cost of food is below average")
 else:
     print("Your cost of food is average")
