@@ -78,7 +78,7 @@ saveROI=int(float(input("What is the interest rate on your savings per year?, e.
 three=total*3
 more=three-savings
 moreTime=more/save
-if more>0:
+while more>0:
     print("Based on your current spending habits, you need $"+str(three), "in liquid savings to be financially secure in case of an emergency or opportunity")
     print("Therefore, you need", str(more), "more dollars in savings.")
     print("This will take you", str(moreTime), "months at your current savings rate")
