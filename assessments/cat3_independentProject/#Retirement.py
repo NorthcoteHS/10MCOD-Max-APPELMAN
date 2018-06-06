@@ -78,10 +78,11 @@ saveROI=int(float(input("What is the interest rate on your savings per year?, e.
 three=total*3
 more=three-savings
 moreTime=more/save
-print("Based on your current spending habits, you need", str(three), "in liquid savings to be financially secure in case of an emergency or opportunity")
-print("Therefore, you need", str(more), "more dollars in savings.")
-print("This will take you", str(moreTime), "months at your current savings rate")
-losingToInflation=1.89-saveROI
+if more:
+    print("Based on your current spending habits, you need $"+str(three), "in liquid savings to be financially secure in case of an emergency or opportunity")
+    print("Therefore, you need", str(more), "more dollars in savings.")
+    print("This will take you", str(moreTime), "months at your current savings rate")
+losingToInflation=1.9-saveROI
 winningInflation=saveROI-1.9
 if saveROI<1.89:
     print("Your savings ROI is", str(losingToInflation)+"% less than inflation, therefore, you are losing money. You should save your money somewhere with a higher ROI")
