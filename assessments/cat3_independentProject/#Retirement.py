@@ -73,7 +73,7 @@ print("Part Three- Saving")
 print("Please answer all questions in numerical form only")
 savings=int(input("What is your current non-super savings balance? "))
 save=int(input("How much non-super money do you save per month? "))
-saveROI=int(input("What is the interest rate on your savings per year?, e.g. answer '2' for 2%pa "))
+saveROI=int(float(input("What is the interest rate on your savings per year?, e.g. answer '2' for 2%pa ")))
 #calculate how much the user needs for adequate financial security
 three=total*3
 more=three-savings
@@ -83,11 +83,11 @@ print("Therefore, you need", str(more), "more dollars in savings.")
 print("This will take you", str(moreTime), "months at your current savings rate")
 losingToInflation=1.89-saveROI
 winningInflation=saveROI-1.9
-if saveROI<1.9:
+if saveROI<1.89:
     print("Your savings ROI is", str(losingToInflation)+"% less than inflation, therefore, you are losing money. You should save your money somewhere with a higher ROI")
 elif saveROI==1.9:
     print("Your savings ROI is equal to inflation. You should save your money somewhere with a higher ROI")
-elif saveROI>1.9:
+elif saveROI>1.91:
     print("Your savings ROI is", str(winningInflation)+"% more than inflation, therefore you are making money!")
 
 
