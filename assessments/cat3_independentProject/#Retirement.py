@@ -82,7 +82,7 @@ if more>0:
     print("Based on your current spending habits, you need $"+str(three), "in liquid savings to be financially secure in case of an emergency or opportunity")
     print("Therefore, you need", str(more), "more dollars in savings.")
     print("This will take you", str(moreTime), "months at your current savings rate")
-losingToInflation=float(1.9-saveROI)
+losingToInflation=1.9-saveROI
 winningInflation=saveROI-1.9
 if saveROI==1.9:
     print("Your savings ROI is equal to inflation. You should save your money somewhere with a higher ROI")
