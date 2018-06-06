@@ -21,7 +21,7 @@ if difference>0:
     print("You need to put", str(yearly), "dollars into your superannuation account each year to retire,", str(superPercent)+"% of your annual income")
 else:
     print("Congratulations! You have enough superannuation to retire!")
-      
+
 #5600pm is australian average
 #get info about user spending
 print("Part Two- Spending")
@@ -64,7 +64,8 @@ elif food<110:
     print("Your cost of food is below average")
 else:
     print("Your cost of food is average")
-#
+#debt
+
 
 #get info about user savings
 print("Part Three- Saving")
@@ -83,7 +84,7 @@ print("This will take you", str(moreTime), "months at your current savings rate"
 print("Part Four- Investing")
 yesNo=input("Are you currently making investments other than superannuation? ")
 if yesNo=='yes':
-    risk=input("Which of these best matches your investment? \nA. low risk e.g. guaranteed term deposit or bank account \nB. medium risk e.g. managed fund, ETFS, shares, property \nC. high risk e.g. futures, options, venture capital")
+    risk=input("Which of these best matches your investment? \nA. low risk e.g. guaranteed term deposit or bank account \nB. medium risk e.g. managed fund, ETFS, shares, property \nC. high risk e.g. futures, options, venture capital\n")
     fee=int(input("What are your annual investment fees as a percentage?, e.g. answer '1' for 1%pa"))
     returns1=int(input("What was your return on investment in 2013?")
     returns2=int(input("What was your return on investment in 2014?")
@@ -91,5 +92,15 @@ if yesNo=='yes':
     returns4=int(input("What was your return on investment in 2016?")
     returns5=int(input("What was your return on investment in 2017?")
     avROI=returns1+returns2+returns3+returns4+returns5/5
-    print("Your average ROI is", avROI, "%pa")
-    
+    print("Your average ROI is", avROI, "%pa')
+#average rate of inflation for last 5 years is 1.896%pa
+    if avROI<1.9:
+          print("You are currently making negative profits on your investment due to inflation.")
+    elif avROI>1.9 and avROI<4:
+          print("You are currently making a small profit on your investment.")
+    elif avROI>4 and avROI<7:
+          print("You are currently making a reasonably good profit on your investment.")
+    else:
+          print("You are making awesome profits! congratulations!")
+    if risk=='A'
+
