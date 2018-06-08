@@ -7,9 +7,9 @@ print(" ")
 #get info about user superannuation
 print("Part One- Superannuation")
 print("Please answer all questions in numerical form only")
-paIncome=int(input("What is your annual income? "))
+paIncome=int(input("What is your combined annual household income? "))
 age=int(input("What is your current age? "))
-superr=int(input("What is your current superannuation balance? "))
+superr=int(input("What is your current combined household superannuation balance? "))
 
 #tell user how much more superannuation they need
 difference=250000-superr
@@ -26,10 +26,10 @@ else:
 #get info about user spending
 print("Part Two- Spending")
 print("Please answer all questions in numerical form only")
-housing=int(input("How much do you spend on mortgage/rent per month? "))
-bills=int(input("How much do you spend on utilities per month? "))
-food=int(input("How much do you spend on groceries per month, excluding restaurants? "))
-other=int(input("How much do you spend on other items per month?- e.g. clothes, pets, entertainment "))
+housing=int(input("How much does your household spend on mortgage/rent per month? "))
+bills=int(input("How much does your household spend on utilities per month? "))
+food=int(input("How much does your household spend on groceries per month, excluding restaurants? "))
+other=int(input("How much does your household spend on other items per month?- e.g. clothes, pets, entertainment "))
 total=housing+bills+food+other
 pmIncome=paIncome/12
 yearSpend=total*12
