@@ -30,8 +30,7 @@ housing=int(input("How much do you spend on mortgage/rent per month? "))
 bills=int(input("How much do you spend on utilities per month? "))
 food=int(input("How much do you spend on groceries per month, excluding restaurants? "))
 other=int(input("How much do you spend on other items per month?- e.g. clothes, pets, entertainment "))
-DEBT=int(input("How much do you spend on debt payments per month, including interest payments and excluding mortgage payments? "))
-total=housing+bills+food+other+DEBT
+total=housing+bills+food+other
 pmIncome=paIncome/12
 yearSpend=total*12
 #get user spending as a percentage of user income
@@ -65,7 +64,6 @@ elif food<440:
     print("Your cost of food is below average")
 else:
     print("Your cost of food is average")
-#debt
 
 
 #get info about user savings
@@ -99,12 +97,11 @@ yesNo=input("Are you currently making investments other than superannuation? (ye
 yesNo=yesNo.strip()
 if yesNo=='yes':
     risk=input("Which of these best matches your investment? \nA. low risk e.g. guaranteed term deposit or bank account \nB. medium risk e.g. managed fund, ETFS, shares, property \nC. high risk e.g. futures, options, venture capital\n")
-    fee=int(input("What are your annual investment fees as a percentage?, e.g. answer '1' for 1%pa"))
-    returns1=int(input("What was your return on investment in 2013?"))
-    returns2=int(input("What was your return on investment in 2014?"))
-    returns3=int(input("What was your return on investment in 2015?"))
-    returns4=int(input("What was your return on investment in 2016?"))
-    returns5=int(input("What was your return on investment in 2017?"))
+    returns1=int(input("What was your return on investment in 2013? "))
+    returns2=int(input("What was your return on investment in 2014? "))
+    returns3=int(input("What was your return on investment in 2015? "))
+    returns4=int(input("What was your return on investment in 2016? "))
+    returns5=int(input("What was your return on investment in 2017? "))
     avROI=(returns1+returns2+returns3+returns4+returns5)/5
     print("Your average ROI is", avROI, "%pa")
 #average rate of inflation for last 5 years is 1.896%pa
@@ -134,3 +131,4 @@ elif years>7 and years<20:
     print("Assuming you retire in", years, "years, you should make diversified, medium-to-high risk ivestments (expected to return negative profits 2 to 3 years out of 20) ")
 else:
     print("Assuming you retire in", years, "years, you should make diversified, high risk investments (expected to return negative profits 4 to 5 years out of 20) ")
+print("Thanks for using #Retirement!")
