@@ -7,9 +7,9 @@ print(" ")
 #get info about user superannuation
 print("Part One- Superannuation")
 print("Please answer all questions in numerical form only")
-paIncome=int(input("What is your combined annual household income? "))
-age=int(input("What is your current age? "))
-superr=int(input("What is your current combined household superannuation balance? "))
+paIncome=int(float(input("What is your combined annual household income? ")))
+age=int(float(input("What is your current age? ")))
+superr=int(float(input("What is your current combined household superannuation balance? ")))
 
 #tell user how much more superannuation they need
 difference=250000-superr
@@ -69,8 +69,8 @@ else:
 #get info about user savings
 print("Part Three- Saving")
 print("Please answer all questions in numerical form only")
-savings=int(input("What is your current non-super savings balance? "))
-save=int(input("How much non-super money do you save per month? "))
+savings=int(float(input("What is your current non-super savings balance? ")))
+save=int(float(input("How much non-super money do you save per month? ")))
 saveROI=int(float(input("What is the interest rate on your savings per year?, e.g. answer '2' for 2%pa ")))
 #calculate how much the user needs for adequate financial security
 three=total*3
