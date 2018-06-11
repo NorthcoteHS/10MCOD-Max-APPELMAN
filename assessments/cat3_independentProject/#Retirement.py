@@ -97,11 +97,11 @@ yesNo=input("Are you currently making investments other than superannuation? (ye
 yesNo=yesNo.strip()
 if yesNo=='yes':
     risk=input("Which of these best matches your investment? \nA. low risk e.g. guaranteed term deposit or bank account \nB. medium risk e.g. managed fund, ETFS, shares, property \nC. high risk e.g. futures, options, venture capital\n")
-    returns1=int(input("What was your return on investment in 2013? "))
-    returns2=int(input("What was your return on investment in 2014? "))
-    returns3=int(input("What was your return on investment in 2015? "))
-    returns4=int(input("What was your return on investment in 2016? "))
-    returns5=int(input("What was your return on investment in 2017? "))
+    returns1=int(float(input("What was your return on investment in 2013? ")))
+    returns2=int(float(input("What was your return on investment in 2014? ")))
+    returns3=int(float(input("What was your return on investment in 2015? ")))
+    returns4=int(float(input("What was your return on investment in 2016? ")))
+    returns5=int(float(input("What was your return on investment in 2017? ")))
     avROI=(returns1+returns2+returns3+returns4+returns5)/5
     print("Your average ROI is", avROI, "%pa")
 #average rate of inflation for last 5 years is 1.896%pa
