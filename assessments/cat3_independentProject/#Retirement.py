@@ -26,10 +26,10 @@ else:
 #get info about user spending
 print("Part Two- Spending")
 print("Please answer all questions in numerical form only")
-housing=int(input("How much does your household spend on mortgage/rent per month? "))
-bills=int(input("How much does your household spend on utilities per month? "))
-food=int(input("How much does your household spend on groceries per month, excluding restaurants? "))
-other=int(input("How much does your household spend on other items per month?- e.g. clothes, pets, entertainment "))
+housing=int(float(input("How much does your household spend on mortgage/rent per month? ")))
+bills=int(float(input("How much does your household spend on utilities per month? ")))
+food=int(float(input("How much does your household spend on groceries per month, excluding restaurants? ")))
+other=int(float(input("How much does your household spend on other items per month?- e.g. clothes, pets, entertainment ")))
 total=housing+bills+food+other
 pmIncome=paIncome/12
 yearSpend=total*12
