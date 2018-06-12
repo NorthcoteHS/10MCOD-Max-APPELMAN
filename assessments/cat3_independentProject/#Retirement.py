@@ -19,7 +19,8 @@ while bye=='y':
         print("You need", difference, "more dollars in superannuation to retire, assuming you have a paid-off house")
         years=65-age
         yearly=difference/years
-        superPercent=yearly/paIncome*100
+        superPercen=round(yearly/paIncome*1000)
+        superPercent=superPercen/10
         print("You need to put", str(yearly), "dollars into your superannuation account each year to retire,", str(superPercent)+"% of your annual income")
     else:
         print("Congratulations! You have enough superannuation to retire!")
