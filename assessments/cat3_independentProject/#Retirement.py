@@ -1,3 +1,4 @@
+while bye=='y':
 #Welcome and disclaimer
 print("Hello and welcome to the amazing #Retirement financial advisor")
 print("Note: this program is not an certified financial advisor")
@@ -132,3 +133,4 @@ elif years>7 and years<20:
 else:
     print("Assuming you retire in", years, "years, you should make diversified, high risk investments (expected to return negative profits 4 to 5 years out of 20) ")
 print("Thanks for using #Retirement!")
+bye=input("Press x to leave or y to go again!")
