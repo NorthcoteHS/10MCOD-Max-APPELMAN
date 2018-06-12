@@ -1,3 +1,4 @@
+bye = 'y'
 while bye=='y':
     #Welcome and disclaimer
     print("Hello and welcome to the amazing #Retirement financial advisor")
