@@ -46,7 +46,7 @@ else:
     print('(Wow you really suck nah its all g)')
 
 #asks user for very basic feedback on the quiz
-x=input('Please rate how much you like this quiz out of 5! ')0
+x=input('Please rate how much you like this quiz out of 5! ')
 #repsonds to the user feedback
 if x==5:
     print("YEE THANKS!")
