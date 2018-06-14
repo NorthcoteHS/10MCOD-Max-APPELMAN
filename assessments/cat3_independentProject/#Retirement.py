@@ -84,7 +84,7 @@ while bye=='y':
         print("Therefore, you need", str(more), "more dollars in savings.")
         print("This will take you", str(moreTime), "months at your current savings rate")
     else:
-        print("Based on your current spending habits, you need $"+str(three), "In liquid savings to be financially secure in case of an emergency or opportunity. You have $"+savings, ". Good job!")
+        print("Based on your current spending habits, you need $"+str(three), "In liquid savings to be financially secure in case of an emergency or opportunity. You have $"+savings, ". Good job!")65000
     losingToInflation=1.9-saveROI
     winningInflation=saveROI-1.9
     if saveROI==1.9:
@@ -137,4 +137,4 @@ while bye=='y':
     else:
         print("Assuming you retire in", years, "years, you should make diversified, high risk investments (expected to return negative profits 4 to 5 years out of 20) ")
     print("Thanks for using #Retirement!")
-    bye=input("Press x to leave or y to go again!")
+    bye=input("Press x to leave or y to go again! ")
