@@ -83,6 +83,8 @@ while bye=='y':
         print("Based on your current spending habits, you need $"+str(three), "in liquid savings to be financially secure in case of an emergency or opportunity")
         print("Therefore, you need", str(more), "more dollars in savings.")
         print("This will take you", str(moreTime), "months at your current savings rate")
+    else:
+        print("Based on your current spending habits, you need $"+str(three), "In liquid savings to be financially secure in case of an emergency or opportunity. You have $"+savings, ". Good job!")
     losingToInflation=1.9-saveROI
     winningInflation=saveROI-1.9
     if saveROI==1.9:
